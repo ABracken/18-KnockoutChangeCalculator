@@ -1,0 +1,42 @@
+.jumbotron.myHeader {
+    margin-bottom: 0px;
+    background-image: url('../images/coinsJumbotron.jpg');    
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: black  0.3em 0.3em 0.3em;
+    color: mintcream;
+    text-align: center;
+}
+.col-md-6 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+
+.money {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+}
+
+.change_type {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+.row.change {
+    text-align: center;
+}
+
+.row.change p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+}
+
+.row.change h4 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+}
+

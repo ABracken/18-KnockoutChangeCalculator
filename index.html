@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Change Calulator</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+  <link rel="icon" type="image/jpg" href="images/marioCoin.png">
+  <link href="css/bootswatch.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="jumbotron myHeader">
+
+    <h1>Change Calculator</h1>
+  </div>
+  <div class="container">
+    <div class="well well-lg">
+      <div>
+        <div class="row">
+          <div class="col-md-6">
+            How much does the item cost?
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                <div class="input-group">
+                  <div class="input-group-addon">$</div>
+                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount" data-bind="value: itemCost">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6" style="text-align: center">
+            How much was given for the item?
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                <div class="input-group">
+                  <div class="input-group-addon">$</div>
+                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount" data-bind="value: moneyGiven">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="well well-lg">
+      <h2 class="money">Customers change is: $<span data-bind="text: change, textUpdate: 'afterkeydown'"></span></h2>
+    </div>
+    <div class="well well-sm">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="change_type">Bills</h3>
+        </div>
+        <div class="col-md-6">
+          <h3 class="change_type">Coins</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row change">
+      <div class="col-md-6">
+        <h4>Twenties</h4>
+        <p data-bind="text: twenties"></p>
+      </div>
+      <div class="col-md-6">
+        <h4>Quarters</h4>
+        <p data-bind="text: quarters"></p>
+      </div>
+    </div>
+
+    <div class="row change">
+      <div class="col-md-6">
+        <h4>Tens</h4>
+        <p data-bind="text: tens"></p>
+      </div>
+      <div class="col-md-6">
+        <h4>Dimes</h4>
+        <p data-bind="text: dimes"></p>
+      </div>
+    </div>
+
+    <div class="row change">
+      <div class="col-md-6">
+        <h4>Fives</h4>
+        <p data-bind="text: fives"></p>
+      </div>
+      <div class="col-md-6">
+        <h4>Nickels</h4>
+        <p data-bind="text: nickels"></p>
+      </div>
+    </div>
+
+    <div class="row change">
+      <div class="col-md-6">
+        <h4>Ones</h4>
+        <p data-bind="text: ones"></p>
+      </div>
+      <div class="col-md-6">
+        <h4>Pennies</h4>
+        <p data-bind="text: pennies"></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/knockout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
